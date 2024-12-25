@@ -1,0 +1,175 @@
+*{
+    box-sizing: border-box;
+    
+}
+:root{
+    --main-color:red;
+}
+h1{
+    text-align: center;
+    font-size: 40px;
+    font-weight: bold;
+}
+body{
+    background-color: #eee;
+}
+h1{
+ 
+  text-align: center;
+  background-color: white;
+  
+  margin: 0 0 50px;
+  padding: 20px;
+}
+.guess-game{
+   text-align: center;
+   margin: 20px auto;
+    width: 1000px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+
+}
+
+
+.game-area .inputs > div{
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.game-area .inputs span {
+    font-size: 25px;
+    font-weight: bold;
+    margin-right: 10px;
+}
+.game-area .inputs input{
+    width: 60px;
+    height: 60px;
+    font-size: 40px;
+    margin:0 5px;
+    border: none;
+    text-align: center;
+    border-bottom: 4px solid #636e72;
+    caret-color: var(--main-color);
+    background: white;
+
+    
+}
+.game-area .inputs input.yes-in-place{
+    
+    background-color: #fdcb6e;
+    border: #fdcb6e;
+    color: white;
+   
+ } 
+ .game-area .inputs input.not-in-place{
+    
+    background-color: #81ecec;
+    border: #fdcb6e;
+    color: white;
+   
+ }
+ .game-area .inputs input.no{
+    
+    background-color: #636e72;
+    border: #fdcb6e;
+    color: white;
+   
+ }
+.game-area .inputs input:focus{
+    outline: #ccc;
+}
+.disabled-try{
+    opacity: .5;
+    pointer-events: none
+}
+
+.message{
+    text-align: center;
+    font-size: 30px;
+    font-weight: bold;
+    margin-top: 10px;
+}
+.message span{
+    font-size: 50px;
+    font-weight: bold;
+    display: block;
+    color: var(--main-color);
+    text-transform: capitalize;
+
+}
+
+.key-color{
+    display: flex;
+    align-items: center;
+    width: 350px;
+    margin-bottom: 10px;
+    background-color: white;
+    padding: 10px;
+    
+    
+}
+.key-color .key{
+    width: 30px;
+    height: 30px;
+    background-color: white;
+    border-radius: 50%;
+    margin-right:10px;
+ }
+
+ .key-color .key.in-place{
+    
+    background-color: #fdcb6e;
+   
+ } 
+ .key-color .key.not-in-place{
+    
+    background-color: #81ecec;
+   
+ }
+ .key-color .key.no{
+    
+    background-color: #636e72;
+   
+ }
+.key-color .key-text{
+    font-size: 20px;
+    font-weight: bold;
+}
+.control{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    width: 500px;
+
+}
+
+.control button.check-word{
+    flex:1;
+    cursor: pointer;
+    background-color: red;
+    padding: 15px 20px;
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+    border: none;
+    border-radius: 5px;
+}
+.control button.hint{
+    width: fit-content;
+    cursor: pointer;
+    background-color: #00b894;
+    padding: 15px 20px;
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+    border: none;
+    border-radius: 5px;
+}
+button:disabled{
+    opacity: .4;
+    background-color: #222;
+    cursor: no-drop;
+}
